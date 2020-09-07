@@ -1,0 +1,33 @@
+body {
+	position: relative;
+	margin: 0;
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+h1 {
+	position: absolute;
+	left: 5px;
+	right: 20px;
+	top: 5px;
+	z-index: 1;
+
+	margin: 0;
+
+	text-align: center;
+	background: #f5f5f5;
+	border-bottom: 1px dashed #aaa;
+}
+textarea {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 280px;
+	height: 243px;
+	padding: 42px 5px 5px;
+	background: #f5f5f5;
+	overflow-y: scroll;
+	border: 5px solid #ccc;
+	resize: none;
+}

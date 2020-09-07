@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>TO-DO Notes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="init();">
+	<h1 id="header">TO-DO Notes</h1>
+	<textarea id="text_input" name="text" cols="30" rows="10" placeholder="Текст"></textarea>
+
+	<script type="text/javascript">
+		function init() {
+			var msg = 'Browser mode.';
+			var textarea = document.getElementById('text_input');
+
+			try {
+				var load = System.Gadget.Settings.read(textarea.name);
+			}
+			catch(e){
+				console.info('Read settings: ' + msg);
+			}
+			
+			if (load) {
+				textarea.value = load;
+			}
+
+			textarea.onkeyup = function () {
+				try {
+					System.Gadget.Settings.writeString(textarea.name, textarea.value);
+				}
+				catch(e){
+					console.info('Keyup event: ' + msg);
+				}
+				
+				console.log(textarea.name, textarea.value || 'empty');
+			};
+		}
+	</script>
+</body>
+</html>
