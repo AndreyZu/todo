@@ -1,11 +1,13 @@
-# Windows 7 Sidebar Gadget
+# Заметки
 
-Simple to-do list.
+Windows 7 Sidebar Gadget.
 
 ![solarized dualmode](https://github.com/AndreyZu/todo/raw/master/screen.png)
 
-Add gadget.xml, index.html, style.css to ZIP and change type to .gadget
+Добавить gadget.xml, index.html, style.css в ZIP-архив и поменять расширение на .gadget
 
-###### Files path and settings after installation:
+**Путь к файлам после установки:**
 
-C:\Users\UserName\AppData\Local\Microsoft\Windows Sidebar
+```
+C:\Users\<UserName>\AppData\Local\Microsoft\Windows Sidebar
+```

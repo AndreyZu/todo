@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <gadget>
-	<name>To-Do Note</name>
+	<name>Notes</name>
 	<version>1.0.0</version>
 	<author name="Andrey Zu">
 		<info url="http://andreyzu.ru/" text="Homepage"/>
 	</author>
 	<copyright>© 2020</copyright>
-	<description>Simple to-do note for Windows 7 Sidebar.</description>
+	<description>Simple Notes for Windows 7 Sidebar.</description>
 	<hosts>
 		<host name="sidebar">
 			<autoscaleDPI>true</autoscaleDPI>

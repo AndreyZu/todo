@@ -2,14 +2,16 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>TO-DO Notes</title>
+	<title>Заметки</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body onload="init();">
-	<h1 id="header">TO-DO Notes</h1>
-	<textarea id="text_input" name="text" cols="30" rows="10" placeholder="Текст"></textarea>
+<body>
+	<h1 id="header">Заметки</h1>
+	<textarea id="text_input" name="text" cols="30" rows="10" maxlength="1000" placeholder="Текст"></textarea>
 
 	<script type="text/javascript">
+		window.onload = init;
+		
 		function init() {
 			var msg = 'Browser mode.';
 			var textarea = document.getElementById('text_input');
